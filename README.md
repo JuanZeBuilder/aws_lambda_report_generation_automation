@@ -1,9 +1,9 @@
-# aws_lambda_kimia_assess_report
+# aws_lambda_report_generation_automation
 
 How to deploy the whole file to aws
 
 # First Time Set-Up
-1. Install node first if u don't have it, if you have node installed, ```run npm install ``` -g serverless in the console.
+1. Install node first if u don't have it, if you have node installed, ```run npm install -g serverless ``` in the console.
 2. Download aws cli on the machine
 3. Run aws configure and key in the AWS Access Key ID and Secret Access Key from any AWS IAM user role that has access to the s3 bucket and lambda. For the region name key-in: ap-southeast-1. leave the output format empty.
 4. Run ```npm i ``` to check if all the package is installed correctly

@@ -1,0 +1,17 @@
+service: ReportGenerationAutomation
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: ap-southeast-1
+
+functions:
+  test: 
+    handler: handler.hello
+    events:
+      - s3:
+          bucket: json-test-bucket
+          event: 
+          existing: true
+
+
